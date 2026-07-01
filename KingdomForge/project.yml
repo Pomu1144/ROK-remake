@@ -1,0 +1,26 @@
+name: KingdomForge
+options:
+  bundleIdPrefix: com.kingdomforge
+configs:
+  Debug: debug
+  Release: release
+targets:
+  KingdomForge:
+    type: application
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - Sources/KingdomForge
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.kingdomforge.app
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        SWIFT_VERSION: "5.9"
+        TARGETED_DEVICE_FAMILY: "1"
+        GENERATE_INFOPLIST_FILE: YES
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations: UIInterfaceOrientationPortrait
+        INFOPLIST_KEY_CFBundleDisplayName: Kingdom Forge
